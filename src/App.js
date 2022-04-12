@@ -4,7 +4,6 @@ import Card from './content/Card/card';
 import Title from './content/Title-searchBar/title';
 import 'bootstrap/dist/css/bootstrap.css';
 import Modal from 'react-bootstrap/Modal';
-// import TheModal from './content/TheModal-test/TheModal.jsx';
 
 function App() {
 
@@ -17,7 +16,6 @@ function App() {
         response.json())
       .then(data =>
         setMonsterData(data),
-        // console.log(data[0].name)
       )
   }, [])
 
@@ -52,34 +50,23 @@ function App() {
     setMonDes(e.target.dataset.description);
     setType(e.target.dataset.type);
     setMonSpecies(e.target.dataset.species);
-
-    // console.log(monName,monDes,monType,monSpecies)
   }
 
   return (
     <div className="App">
 
-        {/* <TheModal show={show} onHide={handleClose} 
-          name={monName}
-          description={monDes}
-          type={monType}
-          species={monSpecies}
-        /> */}
+      <div className="pic"></div>
       
-        <div className="pic"></div>
-      
-        <Modal className="Modal" show={show} onHide={handleClose} >
-          <Modal.Header closeButton>
-            <Modal.Title>{monName}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>{monDes}</Modal.Body>
-          <Modal.Body>Monster Type : {monType}</Modal.Body>
-          <Modal.Body>Species : {monSpecies}</Modal.Body>
-          <Modal.Footer>
-          </Modal.Footer>
-        </Modal>
-
-
+      <Modal className="Modal" show={show} onHide={handleClose} >
+        <Modal.Header closeButton>
+          <Modal.Title>{monName}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{monDes}</Modal.Body>
+        <Modal.Body>Monster Type : {monType}</Modal.Body>
+        <Modal.Body>Species : {monSpecies}</Modal.Body>
+        <Modal.Footer>
+        </Modal.Footer>
+      </Modal>
 
       <Title type={type} handleClick={ handleClick}/>
 
@@ -96,7 +83,6 @@ function App() {
                 species={monster.species} />)
             )
           }
-          
           
         </div>
       
