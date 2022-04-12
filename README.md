@@ -1,13 +1,17 @@
 
 
-# Monster Hunter World
+# MHW Monsters Front End Project
+
+<img width="750" alt="img" src="https://user-images.githubusercontent.com/16528442/163042700-2d90ed1c-1bab-44bf-bc0b-d85b692162b4.png">
+
+
 
 Front end project utilizing react.
 
 ## Built With
 
--React.js
--Bootstrap
+* React.js
+* Bootstrap
 
 ## API
 
@@ -23,4 +27,7 @@ https://monsters-api-stacey.herokuapp.com/api/monsters
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Github:
+https://github.com/jiffylube/mhWorld-monster-api
+
+deployment:
