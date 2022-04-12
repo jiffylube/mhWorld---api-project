@@ -1,10 +1,10 @@
-function Title(props) {
+function Title(prop) {
 
   return (
     <div className="Title">
       <h1>Monsters</h1>
-      <input placeholder="Monster Name"></input>
-      <button>Search</button>
+      <input placeholder="Monster Name" onChange={prop.type}></input>
+      <button onClick={prop.handleClick}>Random Monster</button>
     </div>
 
   );

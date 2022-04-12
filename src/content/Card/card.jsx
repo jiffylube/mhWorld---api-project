@@ -1,12 +1,17 @@
 function Card(fatty) {
 
-  let { monster } = fatty
 
   return (
 
-    <div className="Card" key={monster.species}>
-      <div>{monster.name}</div>
+    <div className="Card">
+
+      <div key={fatty._id}
+        onClick={fatty.handleShow}
+        data-description={fatty.description}
+        data-type={fatty.type}
+        data-species={fatty.species}>{fatty.name}</div>
       {/* <div>{monster.description}</div> */}
+
     </div>
 
 
