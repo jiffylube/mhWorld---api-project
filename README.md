@@ -30,4 +30,5 @@ https://monsters-api-stacey.herokuapp.com/api/monsters
 Github:
 https://github.com/jiffylube/mhWorld-monster-api
 
-deployment:
+Deployed via Netlify:
+https://friendly-pie-4f7f43.netlify.app/
