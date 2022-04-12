@@ -4,7 +4,7 @@ import Card from './content/Card/card';
 import Title from './content/Title-searchBar/title';
 import 'bootstrap/dist/css/bootstrap.css';
 import Modal from 'react-bootstrap/Modal';
-// import Button from 'react-bootstrap/Button';
+// import TheModal from './content/TheModal-test/TheModal.jsx';
 
 function App() {
 
@@ -39,11 +39,11 @@ function App() {
   // Modal constants
   const [show, setShow] = useState(false);
   
-    // Modal contenet states
-    const [monName, setMonName] = useState("");
-    const [monDes, setMonDes] = useState("");
-    const [monType, setType] = useState("");
-    const [monSpecies, setMonSpecies] = useState("");
+  // Modal contenet
+  const [monName, setMonName] = useState("");
+  const [monDes, setMonDes] = useState("");
+  const [monType, setType] = useState("");
+  const [monSpecies, setMonSpecies] = useState("");
 
   const handleClose = () => setShow(false);
   const handleShow = (e) => {
@@ -52,12 +52,23 @@ function App() {
     setMonDes(e.target.dataset.description);
     setType(e.target.dataset.type);
     setMonSpecies(e.target.dataset.species);
+
+    // console.log(monName,monDes,monType,monSpecies)
   }
 
   return (
     <div className="App">
+
+        {/* <TheModal show={show} onHide={handleClose} 
+          name={monName}
+          description={monDes}
+          type={monType}
+          species={monSpecies}
+        /> */}
       
-        <Modal show={show} onHide={handleClose} >
+        <div className="pic"></div>
+      
+        <Modal className="Modal" show={show} onHide={handleClose} >
           <Modal.Header closeButton>
             <Modal.Title>{monName}</Modal.Title>
           </Modal.Header>
