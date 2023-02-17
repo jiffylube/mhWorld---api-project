@@ -7,7 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 
 function App() {
 
-  const url = 'https://mhw-db.com/monsters'
+  const url = 'https://monsters-api-stacey.herokuapp.com/api/monsters'
   const [monsterData, setMonsterData] = useState([]);
   
   useEffect(() => {
