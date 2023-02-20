@@ -27,7 +27,7 @@ function App() {
   }
 
   // set state random button search
-  const [id, setId] = useState("")
+  // const [id, setId] = useState("")
 
   const handleClick = () => {
     setId((monsterData[Math.floor(Math.random() * monsterData.length)]._id))
