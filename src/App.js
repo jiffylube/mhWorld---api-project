@@ -7,7 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 
 function App() {
 
-  const url = 'https://monsters-api-stacey.herokuapp.com/api/monsters'
+  const url = 'https://mhw-db.com/monsters?'
   const [monsterData, setMonsterData] = useState([]);
   
   useEffect(() => {
@@ -75,7 +75,7 @@ function App() {
         <div className="listMonsters">
 
           {
-            monsterData.map((monster) => monster._id.includes(id) && monster.name.toLowerCase().includes(name) &&  (
+            monsterData.map((monster) => monster.name.toLowerCase().includes(name) &&  (
               < Card name={monster.name}
                 handleShow={handleShow}
                 description={monster.description}
