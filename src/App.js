@@ -29,10 +29,10 @@ function App() {
   // set state random button search
   // const [id, setId] = useState("")
 
-  const handleClick = () => {
-    setId((monsterData[Math.floor(Math.random() * monsterData.length)]._id))
-    setName("")
-  }
+  // const handleClick = () => {
+  //   setId((monsterData[Math.floor(Math.random() * monsterData.length)]._id))
+  //   setName("")
+  // }
 
   // Modal constants
   const [show, setShow] = useState(false);
@@ -68,7 +68,7 @@ function App() {
         </Modal.Footer>
       </Modal>
 
-      <Title type={type} handleClick={ handleClick}/>
+      <Title type={type} />
 
       <div className="Contents">
 
