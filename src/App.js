@@ -23,7 +23,7 @@ function App() {
   const [name, setName] = useState("")
   const type = (e) => {
     setName(e.target.value);
-    setId("")
+    // setId("")
   }
 
   // set state random button search
