@@ -15,15 +15,7 @@ Front end project utilizing react.
 
 ## API
 
-Utilizing Api created from mate Stacey Csikos.
-Github and original heroku deployments can be located in links below.
-
-Github:
-https://github.com/staceycsikos/Monsters
-
-Heroku deployment:
-https://monsters-api-stacey.herokuapp.com/api/monsters
-
+Data can be found from public MHW api https://docs.mhw-db.com/
 
 ### Deployment
 
